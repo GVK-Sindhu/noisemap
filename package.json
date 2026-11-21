@@ -1,0 +1,44 @@
+{
+  "name": "community-noise-map",
+  "version": "1.0.0",
+  "description": "Crowdsourced Community Noise Map with React Native, Node.js, Express, and PostGIS",
+  "main": "App.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "start:api": "node src/server.js",
+    "start:mobile": "expo start",
+    "test": "jest --runInBand --colors",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "pg": "^8.11.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@testing-library/react-native": "^12.4.0",
+    "babel-preset-expo": "~9.5.2",
+    "expo": "~49.0.15",
+    "expo-av": "~13.4.1",
+    "expo-location": "~16.1.0",
+    "jest": "^29.7.0",
+    "react": "18.2.0",
+    "react-native": "0.72.6",
+    "react-native-maps": "1.7.4",
+    "react-test-renderer": "18.2.0",
+    "supertest": "^6.3.3"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ]
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "license": "MIT"
+}
